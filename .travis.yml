@@ -5,6 +5,8 @@ deploy:
   provider: heroku
   api_key:
     secure: UDNTlIo6gXjBsDqsR7JL02lG+vGc87Fbi+taYb+OIa+p8CtBH7cy+XH/mEpeXvGP/Z8TVHPpj3qv0Pu5vfbvhaSWAjDU6DHkKY3FhdqMMRBMQwExv7Ld6QeBqytAcggwPdGvdp9PtByA7R+cbZxzvA3Aa1Myex7mVbpFiouU4x7zpW7Z3GIt2F+g56bopBmFejyY1rqruKeqlvl2qInmxSnhwJppMZVpcWuhCQI3Myz7F724IRkZzjnTw/7Akl3IYiwym4RBu5kB9e6HN215Fz/9H9RNsNs7PBxCj6SOBSVYt4yRYU8VV7MUDPDe2w44JUEt8fdkOqQs2p314TIzlxCJ4Xq6sNfejHhpk5+Qwyv+YAYg1Gv1C6zNWJN+a6ZyShDNjq2vcEQNRsaZguX/MVyXnTdApVGUIwupp4jwBxTF2iRCw1qL4Sja3akrIi+C4rBEAYHiQnJYrp/zHMU1AHPcDAecJPq/WOroAMm1QxR5cA+ZT8oDJk+n0kIbrQpYipgYTlSC/TV9Aw4n/JNihH+3sLHex6zQ3THU4TCLiOtW8FrgtYWdc7lvihbnzvbhxorjUCa+XLBycbwes0QdbN9nCgoNjkG/vndSVgPqiNwwQzKiXZxrXl8uPLbo9ctrZhMk6mkmjoOA+duxD+pyriBvUrt7g7jZgOn8ktRXTP0=
+  run: "rake db:migrate"
   app: murmuring-badlands-28165
   on:
     repo: Katravan/projet
+  
