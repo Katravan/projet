@@ -6,8 +6,10 @@ class Town < ActiveRecord::Base
     if attribute_present?("name")
       places = Nominatim.search(self.name).limit(1)
       place = places.first
-      self.latitude = place.lat
-      self.longitude = place.lon
+      if place
+        self.latitude = place.lat
+        self.longitude = place.lon
+      end
     end
   end 
 end

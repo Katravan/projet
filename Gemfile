@@ -41,3 +41,6 @@ gem 'spring',        group: :development
 
 #Use nominatim
 gem 'nominatim', '~> 0.0.6' 
+
+#Use vcr
+gem 'vcr', '~> 3.0', '>= 3.0.3', group: [:test]
