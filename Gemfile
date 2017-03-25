@@ -40,4 +40,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 #Use nominatim
-gem 'nominatim'
+gem 'nominatim', '~> 0.0.6' 
