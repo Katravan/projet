@@ -1,6 +1,6 @@
 class Town < ActiveRecord::Base
  before_validation :geocode
-  
+
   private
   def geocode
     if attribute_present?("name")

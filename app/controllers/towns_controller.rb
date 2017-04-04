@@ -11,6 +11,12 @@ class TownsController < ApplicationController
   # GET /towns/1.json
   def show
     @currentDate = Date.current
+    
+    forecast = ForecastIO.forecast(@town.latitude, @town.longitude)
+    if forecast
+      @weather = forecast.currently.summary
+      @temperature = forecast.currently.apparentTemperature 
+    end
   end
 
   # GET /towns/new
