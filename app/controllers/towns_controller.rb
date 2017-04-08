@@ -12,7 +12,7 @@ class TownsController < ApplicationController
   def show
     @currentDate = Date.current
     
-    forecast = ForecastIO.forecast(@town.latitude, @town.longitude)
+    forecast = @town.getForecast
     if forecast
       @weather = forecast.currently.summary
       @temperature = forecast.currently.apparentTemperature 

@@ -1,6 +1,9 @@
 class Town < ActiveRecord::Base
  before_validation :geocode
-
+  
+  def getForecast
+     ForecastIO.forecast(self.latitude, self.longitude)
+  end
   private
   def geocode
     if attribute_present?("name")
