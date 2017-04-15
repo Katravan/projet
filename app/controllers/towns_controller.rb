@@ -12,11 +12,13 @@ class TownsController < ApplicationController
   def show
     @currentDate = Date.current
     
-    forecast = @town.getForecast
-    if forecast
-      @weather = forecast.currently.summary
-      @temperature = forecast.currently.apparentTemperature 
-    end
+    @forecast = @town.getForecast
+    #Other method
+    #forecast = @town.getForecast
+    #if forecast
+    #  @weather = forecast.currently.summary
+    #  @temperature = forecast.currently.apparentTemperature 
+    # end
   end
 
   # GET /towns/new

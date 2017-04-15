@@ -23,12 +23,12 @@
 
 <p>
   <strong>Weather:</strong>
-  <%= @weather %>
+  <%= @forecast.currently.summary %>
 </p>
 
 <p>
   <strong>Apparent temperature:</strong>
-  <%= @temperature %>
+  <%= @forecast.currently.apparentTemperature %>
 </p>
 
 <%= link_to 'Edit', edit_town_path(@town) %> |
