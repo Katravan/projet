@@ -7,7 +7,7 @@ import { Student } from './student';
 export class StudentService {
   
   private headers = new Headers({'Content-Type': 'application/json'});
-  private studentUrl = '/students.json';  
+  private studentUrl = 'students.json';  
 
   constructor(private http: Http) { }
   getStudents(): Promise<Student[]> {
